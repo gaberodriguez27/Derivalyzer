@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Derivalyzer</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="math.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <canvas id="graph"></canvas>
+        <div class="title">
+            <p>Derivalyzer: Graphing Calculator / Derivative Visualizer</p>
+        </div>
+        <div class="credits">
+            <p>Made by Gabe Rodriguez</p>
+        </div>
+        <div id="functions">
+            <div id="function1">
+                <input type="checkbox" checked id="checkf1">
+                <div class="functiondiv">
+                    <p>y =</p>
+                </div>
+                <input type="text" id="f1" placeholder="Enter function here" value="a*x^2 + b*x + c">
+            </div>
+            <div id="function2">
+                <input type="checkbox" checked id="checkf2">
+                <div class="functiondiv">
+                    <p>y =</p>
+                </div>
+                <input type="text" id="f2" placeholder="Enter function here">
+            </div>
+            <div id="function3">
+                <input type="checkbox" checked id="checkf3">
+                <div class="functiondiv">
+                    <p>y =</p>
+                </div>
+                <input type="text" id="f3" placeholder="Enter function here">
+            </div>
+            <div id="function4">
+                <input type="checkbox" checked id="checkf4">
+                <div class="functiondiv">
+                    <p>y =</p>
+                </div>
+                <input type="text" id="f4" placeholder="Enter function here">
+            </div>
+            <div id="function5">
+                <input type="checkbox" checked id="checkf5">
+                <div class="functiondiv">
+                    <p>y =</p>
+                </div>
+                <input type="text" id="f5" placeholder="Enter function here">
+            </div>
+            <button id="switchtoderiv">Switch to derivative visualizer mode</button>
+        </div>
+        <div id="derivative">
+            <div id="dfunction1">
+                <input type="checkbox" checked id="checkdf1">
+                <div class="functiondiv">
+                    <p>f(x) =</p>
+                </div>
+                <input type="text" id="df1" placeholder="Enter function here" value="a * x ^ 2 + b * x + c">
+            </div>
+            <div id="dfunction2">
+                <input type="checkbox" id="checkdf2">
+                <div class="functiondiv">
+                    <p>f'(x) =</p>
+                </div>
+                <input type="text" id="df2" placeholder="Derivative will appear here" readonly>
+            </div>
+            <div id="dfunction3">
+                <input type="checkbox" checked id="checkdf3">
+                <div class="functiondiv">
+                    <p>g(x) =</p>
+                </div>
+                <input type="text" id="df3" placeholder="Tangent line will appear here" readonly>
+            </div>
+            <div id="xselector">
+                <div class="xlabeldiv">
+                    <p>tx =</p>
+                    <input type="number" name="xderivinput" id="xderivinput" value="0">
+                    <input type="range" name="xderivslider" id="xderivslider" value="0" step="0.001">
+                </div>
+            </div>
+            <div id="derivinfoholder">
+                <p>ty =</p>
+            </div>
+            <input type="number" name="ty" id="ty" value="0" readonly>
+            <div id="derivextrainfoholder">
+                <p>Derivative visualizer demonstration<br><a href="https://math.libretexts.org/Bookshelves/Calculus/Calculus_(OpenStax)/03%3A_Derivatives/3.02%3A_The_Derivative_as_a_Function">Learn how to calculate derivatives</a> like f'(x)<br>Line g(x) calculated using point slope form:<br>y-y1=m(x-x1)&nbsp;&nbsp;&nbsp;<a href="https://calcworkshop.com/derivatives/equation-of-tangent-line/" target="_blank">Learn more</a></p>
+            </div>
+            <div id="slopeholder">
+                <p id="slopetx">f'(tx) =</p>
+            </div>
+            <input type="number" name="ty" id="slope" value="0" readonly>
+            <button id="switchtographing">Switch to graphing calculator mode</button>
+        </div>
+        <div id="vars">
+            <div id="aholder" class="var">
+                <label for="a">a =</label>
+                <input type="number" id="a" placeholder="Type here" value="0.25">
+            </div>
+            <div id="bholder" class="var">
+                <label for="b">b =</label>
+                <input type="number" id="b" placeholder="Type here" value="0">
+            </div>
+            <div id="cholder" class="var">
+                <label for="c">c =</label>
+                <input type="number" id="c" placeholder="Type here" value="-5">
+            </div>
+            <div id="dholder" class="var">
+                <label for="d">d =</label>
+                <input type="number" id="d" placeholder="Type here">
+            </div>
+            <div id="kholder" class="var">
+                <label for="k">k =</label>
+                <input type="number" id="k" placeholder="Type here">
+            </div>
+            <div id="tholder" class="var">
+                <label for="t">t =</label>
+                <input type="number" id="t" placeholder="Loading" readonly>
+            </div>
+        </div>
+        <button id="toggleui">Hide UI</button>
+        <button id="origin">Back to origin</button>
+        <button id="zoomout">-</button>
+        <button id="zoomin">+</button>
+        <script src="script.js"></script>
+    </body>
+</html>

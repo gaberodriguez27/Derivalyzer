@@ -1,0 +1,546 @@
+body{
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    /* overflow-x: hidden; */
+}
+
+#graph{
+    display:block;
+    padding: 0;
+    /* margin: 0; */
+    gap: 0;
+    /* display: fixed; */
+}
+
+p{
+    font-family: "Arial", sans-serif;
+}
+
+#origin{
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    font-size: 18px;
+}
+
+#zoomin{
+    position: fixed;
+    bottom: 125px;
+    right: 35px;
+    font-size: 18px;
+    width: 27px;
+    height: 27px;
+}
+
+#zoomout{
+    position: fixed;
+    bottom: 85px;
+    right: 35px;
+    font-size: 18px;
+    width: 27px;
+    height: 27px;
+}
+
+#toggleui{
+    position: fixed;
+    bottom: 35px;
+    left: 35px;
+    font-size: 18px;
+}
+
+#functions{
+    display: none;
+    position:fixed;
+    left:0;
+    top: 100px;
+    width: 450px;
+    height: 440px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
+}
+
+.functiondiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    /*
+    background-color: blue;
+    margin: 0;
+    position:relative */
+}
+
+/* .functiondiv p{
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+} */
+
+.functiondiv p{
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+    position: fixed;
+    left: 65px;
+}
+
+#function1{
+    position: fixed;
+    width: 400px;
+    height: 51px;
+    left: 25px;
+    top: 125px;
+    outline: 3px solid red;
+    box-shadow: 0 0 0 4px black;
+    background-color: white;
+}
+
+#f1{
+    position: fixed;
+    /* width: 400px;*/
+    height: 35px;
+
+    top: 130px;
+    left: 95px;
+    width: 317px;
+    margin: 0;
+    font-size: 16px;
+}
+
+#checkf1{
+    position: fixed;
+    /* width: 400px;*/
+    height: 20px;
+    width: 20px;
+    left: 37px;
+    top: 140px;
+    margin: 0;
+    font-size: 16px;
+}
+
+#function2{
+    position: fixed;
+    width: 400px;
+    height: 51px;
+    left: 25px;
+    top: 200px;
+    outline: 3px solid rgb(29, 29, 255);
+    box-shadow: 0 0 0 4px black;
+    background-color: white;
+}
+
+#f2{
+    position: fixed;
+    /* width: 400px;*/
+    height: 35px;
+
+    top: 205px;
+    left: 95px;
+    width: 317px;
+    margin: 0;
+    font-size: 16px;
+}
+
+#checkf2{
+    position: fixed;
+    /* width: 400px;*/
+    height: 20px;
+    width: 20px;
+    left: 37px;
+    top: 215px;
+    margin: 0;
+    font-size: 16px;
+}
+
+#function3{
+    position: fixed;
+    width: 400px;
+    height: 51px;
+    left: 25px;
+    top: 275px;
+    outline: 3px solid green;
+    box-shadow: 0 0 0 4px black;
+    background-color: white;
+}
+
+#f3{
+    position: fixed;
+    /* width: 400px;*/
+    height: 35px;
+
+    top: 280px;
+    left: 95px;
+    width: 317px;
+    margin: 0;
+    font-size: 16px;
+}
+
+#checkf3{
+    position: fixed;
+    /* width: 400px;*/
+    height: 20px;
+    width: 20px;
+    left: 37px;
+    top: 290px;
+    margin: 0;
+    font-size: 16px;
+}
+
+#function4{
+    position: fixed;
+    width: 400px;
+    height: 51px;
+    left: 25px;
+    top: 350px;
+    outline: 3px solid rgb(127, 0, 185);
+    box-shadow: 0 0 0 4px black;
+    background-color: white;
+}
+
+#f4{
+    position: fixed;
+    /* width: 400px;*/
+    height: 35px;
+
+    top: 355px;
+    left: 95px;
+    width: 317px;
+    margin: 0;
+    font-size: 16px;
+}
+
+#checkf4{
+    position: fixed;
+    /* width: 400px;*/
+    height: 20px;
+    width: 20px;
+    left: 37px;
+    top: 365px;
+    margin: 0;
+    font-size: 16px;
+}
+
+#function5{
+    position: fixed;
+    width: 400px;
+    height: 51px;
+    left: 25px;
+    top: 425px;
+    outline: 3px solid black;
+    box-shadow: 0 0 0 4px black;
+    background-color: white;
+}
+
+#f5{
+    position: fixed;
+    /* width: 400px;*/
+    height: 35px;
+
+    top: 430px;
+    left: 95px;
+    width: 317px;
+    margin: 0;
+    font-size: 16px;
+}
+
+#checkf5{
+    position: fixed;
+    /* width: 400px;*/
+    height: 20px;
+    width: 20px;
+    left: 37px;
+    top: 440px;
+    margin: 0;
+    font-size: 16px;
+}
+
+#switchtoderiv{
+    position: fixed;
+    font-size: 16px;
+    width: 410px;
+    height: 30px;
+    left: 20px;
+    top: 489px;
+}
+
+#switchtographing{
+    position: fixed;
+    font-size: 16px;
+    width: 410px;
+    height: 30px;
+    left: 20px;
+    top: 489px;
+}
+
+#derivative{
+    position:fixed;
+    left:0;
+    top: 100px;
+    width: 450px;
+    height: 440px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
+}
+
+#dfunction1{
+    position: fixed;
+    width: 400px;
+    height: 51px;
+    left: 25px;
+    top: 125px;
+    outline: 3px solid red;
+    box-shadow: 0 0 0 4px black;
+    background-color: white;
+}
+
+#df1{
+    position: fixed;
+    /* width: 400px;*/
+    height: 35px;
+
+    top: 130px;
+    left: 117px;
+    width: 295px;
+    margin: 0;
+    font-size: 16px;
+}
+
+#checkdf1{
+    position: fixed;
+    /* width: 400px;*/
+    height: 20px;
+    width: 20px;
+    left: 37px;
+    top: 140px;
+    margin: 0;
+    font-size: 16px;
+}
+
+#dfunction2{
+    position: fixed;
+    width: 400px;
+    height: 51px;
+    left: 25px;
+    top: 200px;
+    outline: 3px solid rgb(29, 29, 255);
+    box-shadow: 0 0 0 4px black;
+    background-color: white;
+}
+
+#df2{
+    position: fixed;
+    /* width: 400px;*/
+    height: 35px;
+
+    top: 205px;
+    left: 117px;
+    width: 295px;
+    margin: 0;
+    font-size: 16px;
+}
+
+#checkdf2{
+    position: fixed;
+    /* width: 400px;*/
+    height: 20px;
+    width: 20px;
+    left: 37px;
+    top: 215px;
+    margin: 0;
+    font-size: 16px;
+}
+
+#dfunction3{
+    position: fixed;
+    width: 400px;
+    height: 51px;
+    left: 25px;
+    top: 275px;
+    outline: 3px solid green;
+    box-shadow: 0 0 0 4px black;
+    background-color: white;
+}
+
+#df3{
+    position: fixed;
+    /* width: 400px;*/
+    height: 35px;
+
+    top: 280px;
+    left: 117px;
+    width: 295px;
+    margin: 0;
+    font-size: 16px;
+}
+
+#checkdf3{
+    position: fixed;
+    /* width: 400px;*/
+    height: 20px;
+    width: 20px;
+    left: 37px;
+    top: 290px;
+    margin: 0;
+    font-size: 16px;
+}
+
+#vars{
+    position:fixed;
+    left:50vw;
+    bottom:0px;
+    width: 500px;
+    height: 80px;
+    transform: translate(-50%, 0);
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    /* border: 1px solid #ccc; */
+    width: 500px;
+    margin: 0 auto;
+}
+
+#vars label{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#vars input{
+    font-size: 16px;
+    padding: 8px;
+    width: 100px;
+    height: 10px;
+}
+
+.var {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    gap: 5px;
+}
+
+#xselector{
+    position: fixed;
+    width: 400px;
+    height: 51px;
+    left: 25px;
+    top: 320px;
+}
+
+#xselector p{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#xderivslider{
+    position: fixed;
+    left: 148px;
+    top: 340px;
+    width: 282px;
+    margin: 0;
+    padding: 0;
+}
+
+#xderivinput{
+    position: fixed;
+    top: 338px;
+    left: 61px;
+    width: 64px;
+}
+
+#derivinfoholder{
+    position: fixed;
+    width: 100px;
+    height: 51px;
+    left: 25px;
+    top: 345px;
+}
+
+#derivinfoholder p{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#derivextrainfoholder{
+    position: fixed;
+    width: 400px;
+    height: 51px;
+    left: 25px;
+    top: 376px;
+}
+
+#derivextrainfoholder p{
+    font-size: 18px;
+}
+
+#ty{
+    position: fixed;
+    top: 365px;
+    left: 61px;
+    width: 141px;
+}
+
+#slopeholder{
+    position: fixed;
+    width: 100px;
+    height: 51px;
+    left: 223px;
+    top: 347px;
+}
+
+#slopeholder p{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#slope{
+    position: fixed;
+    top: 365px;
+    left: 280px;
+    width: 141px;
+}
+
+.credits{
+    display: inline-block;
+    background-color: grey;
+    color: rgb(236, 236, 236);
+    font-size: 14px;
+    position: fixed;
+    padding: 2px;
+    margin: 0;
+    gap: 0;
+    right: 0;
+    top: 0;
+}
+
+.credits p{
+    margin: 0;
+    font-size: 15px;
+}
+
+.title{
+    display: inline-block;
+    background-color: grey;
+    color: rgb(236, 236, 236);
+    position: fixed;
+    padding: 2px;
+    margin: 0;
+    gap: 0;
+    left: 0;
+    top: 0;
+}
+
+.title p{
+    margin: 0;
+    font-size: 15px;
+}
